@@ -1,7 +1,7 @@
 // JavaScript Document
-const toggleMenu = document.querySelector(".toggle-menu")
+const Hamburger = document.querySelector(".hamburger")
 const dropDownMenu = document.querySelector(".dropdown-menu")
 
-toggleMenu.onclick = function () {
+Hamburger.onclick = function () {
 	dropDownMenu.classList.toggle("open")
 	const isOpen = dropDownMenu.classList.contains("open")
