@@ -1,5 +1,3 @@
-@charset "utf-8";
-/* CSS Document */
 
 * {
 	font-family: Lato;
@@ -13,20 +11,22 @@ hr {
 }
 
 .content {
+	position: relative;
 	margin: auto auto;
 	display: block;
-	max-width: 70rem;
+	max-width: 80rem;
 	padding-right: 1.6rem;
 	padding-left: 1.6rem;
 }
 
 .info-panel {
-	background-color: #f2efec;
+	background-color: #FDFEFF;
 	float: left;
 	display: block;
+	margin-left: 2.5%;
 	margin-right: 2.5%;
 	margin-bottom: 2.5%;
-	width: 46%;
+	width: 45%;
 	padding: 1.8rem;
 	border-radius: 8px;
 }
@@ -72,6 +72,15 @@ hr {
 	line-height: 1.5;
 }
 
-@media {
-	
+@media(max-width: 992px) {
+	.info-panel {
+		width: 100%;
+	}
+}
+
+
+@media(max-width: 576px) {
+	.info-panel {
+		width: 100%;
+	}
 }
