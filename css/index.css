@@ -1,0 +1,82 @@
+
+
+.title{
+    position: relative;
+	max-width: fit-content;
+	background: #34444C;
+    margin-top: 3rem;
+	margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    
+    height: 3em;
+}
+
+.title h1 {
+	margin: 0.8rem;
+	font-size: 40px;
+	text-align: center;
+	font-weight: lighter;
+	color: white;
+}
+
+#homepageButtons {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: relative;
+	max-width: fit-content;
+
+}
+
+.buttonRows {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-buttons{
+    padding: 8px;
+
+    max-width: fit-content;
+    background: #34444C;
+    margin-top: 0.75rem;
+	margin-bottom: 0.75rem;
+    
+    align-items: center;
+    border-radius: 50px;
+
+   
+	font-size: 24px;
+	text-align: center;
+	font-weight: lighter;
+	color: white;
+    
+}
+.flex-buttons2 {
+    padding: 8px;
+
+    max-width: fit-content;
+    background: #34444C;
+    margin-top: 0.75rem;
+	margin-bottom: 0.75rem;
+    
+    align-items: center;
+    border-radius: 50px;
+
+   
+	font-size: 24px;
+	text-align: center;
+	font-weight: lighter;
+	color: white;
+    
+}
+
+
+
+
+
+/* Hover Code*/
+a:hover {
+	color: steelblue;
+}
