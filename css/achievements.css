@@ -97,7 +97,8 @@ hr {
 }
 
 .achievement {
-	
+
+    margin: 15px;
     display: flex;
     align-items: center;
     max-height: 250px;
