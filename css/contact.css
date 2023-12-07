@@ -286,7 +286,6 @@ tr td{
 /* Responsive CSS */
 @media (max-width: 992px) {
 
-
 	.contact-box {
 		flex-direction: column; 
 	}
@@ -299,10 +298,12 @@ tr td{
 	
 	.input-row {
 		flex-direction: column; 
+		margin-bottom: 1rem;
 	}
 	
 	.input-row .input-group {
 		flex-basis: 100%; 
+		padding-bottom: 1rem;
 	}
 	input{
 		width: 100%;
@@ -347,10 +348,12 @@ tr td{
 	
 	.input-row {
 		flex-direction: column; 
+		margin-bottom: 1rem;
 	}
 	
 	.input-row .input-group {
 		flex-basis: 100%; 
+		padding-bottom: 1rem;
 	}
 	input{
 		width: 100%;
