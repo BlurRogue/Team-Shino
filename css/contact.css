@@ -48,7 +48,7 @@ header {
 
 .title h1 {
 	margin: auto auto;
-	font-size: 24px;
+	font-size: 1.5rem;
 	text-align: center;
 	font-weight: lighter;
 	color: white;
@@ -173,43 +173,45 @@ header {
 
 /* The Contact Us Page CSS */
  
+html, body {
+	min-height: 100%;
+}
+  
+body {
+	min-height: 100%;
+	margin: 0;
+}
+  
 .container{
     width: 100%;
-	height: 100vh;
+	min-height: 100vh;
     margin: 0px;
-
+	display: flex;
 }
 
 .contact-box{
     background: #fff;
     display: flex;
-	height: 100vh;
+	height: 100%;
+	flex: 1; 
+	align-items: stretch;
+	min-height: 100vh;
+	/* flex-flow: wrap; */
 }
 
 .title-left{
     flex-basis:30%;
     padding: 2.5rem;
-    background: #34444C;
+	min-height: 100%;
+	background: #34444C;
     color: #fff;
-	height: 100vh;
-
 }
 
 .title-right{
     flex-basis:70%;
     padding: 2.5rem 3.75rem;
-	height: 100vh;
+	height: 100%;
 }
-/*
-h1{
-    margin-bottom: 10px;
-}
-
-.containter p{ 
-    margin-bottom: 10px;
-}
-*/
-
 
 .input-row{
     display: flex;
@@ -267,11 +269,114 @@ button{
     margin-bottom: 2rem;
 }
 
+
+
 tr td:first-child{
-    padding-right: 25rem;
+    padding-right: 5rem;
 
 }
 tr td{
-    padding-top: 25rem;
+    padding-top: 5rem;
     
 }
+
+
+
+
+/* Responsive CSS */
+@media (max-width: 992px) {
+
+
+	.contact-box {
+		flex-direction: column; 
+	}
+	
+	.title-left,
+	.title-right {
+		flex-basis: 100%; 
+		padding: 2.5rem;
+	}
+	
+	.input-row {
+		flex-direction: column; 
+	}
+	
+	.input-row .input-group {
+		flex-basis: 100%; 
+	}
+	input{
+		width: 100%;
+	}
+
+	textarea {
+		width: 100%;
+	}
+	
+	.title-left {
+		height:50%;
+	}
+
+	table {
+		table-layout: auto;
+		max-width: 100%;
+	}
+	tr td{
+		padding-top: 0.5rem;
+		
+	}
+
+	tr td:first-child{
+		padding-right: 4rem;
+	
+	}
+}
+
+@media (max-width: 576px) {
+
+
+
+	.contact-box {
+		flex-direction: column; 
+	}
+	
+	.title-left,
+	.title-right {
+		flex-basis: 100%; 
+		padding: 2.5rem;
+	}
+	
+	.input-row {
+		flex-direction: column; 
+	}
+	
+	.input-row .input-group {
+		flex-basis: 100%; 
+	}
+	input{
+		width: 100%;
+	}
+
+	textarea {
+		width: 100%;
+	}
+	
+	.title-left {
+		height:50%;
+	}
+
+	table {
+		table-layout: auto;
+		max-width: 100%;
+	}
+	tr td{
+		padding-top: 0.5rem;
+		
+	}
+
+	tr td:first-child{
+		padding-right: 4rem;
+	
+	}
+	}
+
+
