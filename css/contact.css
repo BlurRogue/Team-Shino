@@ -1,5 +1,8 @@
 @charset "utf-8";
 /* Master CSS*/
+/*While there is a Master CSS document that I could link to the contact page,
+I have removed the link as a lazy solution to a simple problem. The header has 
+padding on the bottom that I wanted to remove without changing the file structure significantly */
 
 * {
 	margin: 0;
@@ -103,8 +106,6 @@ header {
 	scale: 0.95;
 }
 
-/* Content */
-
 /* Downdown Menu */
 .dropdown-menu {
 	position: absolute;
@@ -136,7 +137,7 @@ header {
 	justify-content: center;
 }
 
-/* Responsive CSS */
+/* Responsive CSS */ /*Master CSS*/
 @media(max-width: 992px) {
 	.navbar .links,
 	.navbar .loginbtn {
@@ -171,18 +172,22 @@ header {
 
 
 
-/* The Contact Us Page CSS */
+/*Contact CSS */
  
+
 html, body {
+	/*Setting up a responsive viewport*/
 	min-height: 100%;
 }
   
 body {
+	/*Setting up a responsive viewport*/
 	min-height: 100%;
 	margin: 0;
 }
   
 .container{
+	/*Setting up a responsive viewport*/
     width: 100%;
 	min-height: 100vh;
     margin: 0px;
@@ -190,6 +195,8 @@ body {
 }
 
 .contact-box{
+	/* setting up a flex box for the left and right side, instead of using
+	floats */
     background: #fff;
     display: flex;
 	height: 100%;
@@ -200,6 +207,7 @@ body {
 }
 
 .title-left{
+	/* the Reach Us side*/
     flex-basis:30%;
     padding: 2.5rem;
 	min-height: 100%;
@@ -208,22 +216,39 @@ body {
 }
 
 .title-right{
+	/* the Send Us a Message side*/
     flex-basis:70%;
     padding: 2.5rem 3.75rem;
 	height: 100%;
 }
 
+.title-right h3{
+	/*styling the headers*/
+    color: #34444C;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.title-left h3{
+	/*styling the headers*/
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
 .input-row{
+	/*setting up the forms*/
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
 }
 
 .input-row .input-group{
+	/*setting up the forms*/
     flex-basis: 45%;
 }
 
 input{
+	/*setting up the forms*/
     width: 100%;
     border: none;
     border-bottom: 0.05rem solid #ccc;
@@ -232,7 +257,15 @@ input{
     padding-bottom: 0.5rem;
 }
 
+label{
+	/*setting up the forms*/
+    margin-bottom: 0.3125rem;
+    display: block;
+    color: #34444C;
+}
+
 textarea{
+	/* the text area for the big message on the bottom */
     width:100%;
     border: 0.05rem solid #ccc;
     outline: none;
@@ -240,13 +273,8 @@ textarea{
     box-sizing: border-box;
 }
 
-label{
-    margin-bottom: 0.3125rem;
-    display: block;
-    color: #34444C;
-}
-
 button{
+	/*pretty self-explanatory lol*/
     background: #0decfc;
     width: 6.25rem;
     border: none;
@@ -258,32 +286,21 @@ button{
     box-shadow: 0rem 0.3125rem 1rem 0rem rgba(28,0,181,0.3);
 }
 
-.title-right h3{
-    color: #34444C;
-    font-weight: 600;
-    margin-bottom: 2rem;
+tr td{
+	/* the table on the left */
+    padding-top: 5rem;
 }
-
-.title-left h3{
-    font-weight: 600;
-    margin-bottom: 2rem;
-}
-
-
 
 tr td:first-child{
+	/* the table on the left */
     padding-right: 5rem;
-
-}
-tr td{
-    padding-top: 5rem;
-    
 }
 
 
 
 
-/* Responsive CSS */
+
+/* Responsive CSS */ /*Contact page*/
 @media (max-width: 992px) {
 
 	.contact-box {
@@ -333,9 +350,6 @@ tr td{
 }
 
 @media (max-width: 576px) {
-
-
-
 	.contact-box {
 		flex-direction: column; 
 	}
