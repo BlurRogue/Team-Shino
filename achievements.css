@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+* {
+	font-family: Lato;
+	box-sizing: border-box;
+}
+
+hr {
+	border: 0;
+    height: 1px;
+    background: #878984;
+}
+
+.content {
+	position: relative;
+	margin: auto auto;
+	display: block;
+	max-width: 80rem;
+	padding-right: 1.6rem;
+	padding-left: 1.6rem;
+}
+
+.info-panel {
+	background-color: #FDFEFF;
+	float: left;
+	display: block;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	margin-bottom: 2.5%;
+	width: 15%;
+	padding: 1.8rem;
+	border-radius: 8px;
+}
+
+.info-head {
+	margin: -1.6rem -1.6rem 1.6rem;
+	padding: 0.5rem;
+}
+
+.image-wrapper {
+	float: left;
+	display: inline-block;
+	width: 125px;
+	height: 125px;
+	overflow: hidden;
+	margin-right: 25px;
+}
+
+.image-wrapper img {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+
+.info-panel h2 {
+	margin-top: 8px;
+	padding: 0px 15px 0px 15px;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.info-panel h3 {
+	margin-left: 0px;
+	padding: 5px 15px 8px 15px;
+	font-weight: lighter;
+	font-size: 0.8rem;
+}
+
+.info-about p{
+	font-size: 90%;
+	line-height: 1.5;
+}
+
+@media(max-width: 992px) {
+	.info-panel {
+		width: 100%;
+}
+
+@media(max-width: 576px) {
+	.info-panel {
+		width: 100%;
+	}
+}
