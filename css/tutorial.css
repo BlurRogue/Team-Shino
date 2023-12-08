@@ -1,4 +1,4 @@
-.description {
+description {
 	margin: auto auto;
 	padding: 1rem 5.5rem;
 
@@ -32,7 +32,7 @@
 	background-color: #7f878a;
 	float: right;
 	display: block;
-	margin: -47rem;
+	margin: -45rem;
 	margin-left: 2.5%;
 	margin-right: 2.5%;
 	margin-bottom: 2.5%;
@@ -87,21 +87,16 @@
 
 .big-robot{
 	position: absolute;
-	top:-204px;
-	right: 530px;
+	top:-205px;
+	right:500px;
 }
 
 .ant {
 	position: absolute;
-	top:585px;
+	top:556px;
 	right:610px;
 }
 
-.queen-ant {
-	position: absolute;
-	top: 170px;
-	left:310px;
-}
 
 .water-bug{
 	position:absolute;
@@ -149,43 +144,40 @@
 .basic {
 	position: absolute;
 	top: -160px;
-	right: 465px;
+	right: 620px;
 }
 
 .missile {
 	position: absolute;
 	top:10px;
-	left: 90px;
+	left: 100px;
 }
 
 .cryo{
 	position: absolute;
-	top:15px;
-	left:198px;
+	top:5px;
+	left:130px;
 }
 
 .mine{
 	position: absolute;
-	top:18px;
-	left: 308px;
+	top:5px;
+	left: 125px;
 }
 
 .command{
 	position: absolute;
-	top: -3px;
-	left: 115px;
+	top: -5px;
+	left: 110px;
 }
 
 .fire {
 	position: absolute;
 	top: 2px;
-	left: 240px;
+	left: 110px;
 }
-	
- <style>
-  
-        .five {
-            width: 10px; 
-            height: auto; 
-        }
-    </style>
+
+.queen-ant {
+	position: absolute;
+	top: 170px;
+	left: 310px;
