@@ -32,7 +32,7 @@
 	background-color: #7f878a;
 	float: right;
 	display: block;
-	margin: -54.5rem;
+	margin: -47rem;
 	margin-left: 2.5%;
 	margin-right: 2.5%;
 	margin-bottom: 2.5%;
@@ -83,3 +83,109 @@
 	height: 15%;
 	padding: 1rem;
 	border-radius: 8px;
+}
+
+.big-robot{
+	position: absolute;
+	top:-204px;
+	right: 530px;
+}
+
+.ant {
+	position: absolute;
+	top:585px;
+	right:610px;
+}
+
+.queen-ant {
+	position: absolute;
+	top: 170px;
+	left:310px;
+}
+
+.water-bug{
+	position:absolute;
+	top: 20px;
+	left: 128px;
+	
+}
+
+.final-boss{
+	position:absolute;
+	top: 2px;
+	left: 140px;
+}
+
+.cockroach{
+	position: absolute;
+	top: 20px;
+	left: 90px;
+}
+
+.camo{
+	position: absolute;
+	top:25px;
+	left: 90px;
+}
+
+.beetle{
+	position: absolute;
+	top: -12px;
+	left: 90px;
+}
+
+.drill{
+	position: absolute;
+	top:3px;
+	left: 110px;
+}
+
+.explode {
+	position: absolute;
+	top:2px;
+	left: 110px;
+}
+
+.basic {
+	position: absolute;
+	top: -160px;
+	right: 465px;
+}
+
+.missile {
+	position: absolute;
+	top:10px;
+	left: 90px;
+}
+
+.cryo{
+	position: absolute;
+	top:15px;
+	left:198px;
+}
+
+.mine{
+	position: absolute;
+	top:18px;
+	left: 308px;
+}
+
+.command{
+	position: absolute;
+	top: -3px;
+	left: 115px;
+}
+
+.fire {
+	position: absolute;
+	top: 2px;
+	left: 240px;
+}
+	
+ <style>
+  
+        .five {
+            width: 10px; 
+            height: auto; 
+        }
+    </style>
