@@ -1,99 +1,46 @@
-
-/*
-.title{
-    position: relative;
-	max-width: fit-content;
-	background: #34444C;
-    margin-top: 3rem;
-	margin-bottom: 3rem;
-    display: flex;
-    align-items: center;
-    border-radius: 50px;
-    
-    height: 3em;
-}
-
-.title h1 {
-	margin: 0.8rem;
-	font-size: 40px;
-	text-align: center;
-	font-weight: lighter;
-	color: white;
-}
-
+/*Contact page CSS*/
 
 .container {
-    display: flex;
+    /*A container that centers the container box */
+    width: 100%;
     height: 100vh;
-    max-width: 60rem;
+    margin: auto auto;
+
+    display: flex;
+    align-items: center;
 }
 
-#homepageButtons {
+.container-box{
+    /*A container that makes a flex box for the title and buttons*/
+    width: 30%;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    align-content: center;
-	max-width: 60rem;
-    text-align: center;
+
+    align-items: center;
+    justify-content:center;
+    vertical-align: middle;
 }
 
-.buttonRows {
-    max-width: 60rem;
-    display: flex;
-    flex-direction: row;
+.top{
+    /*container for the long buttons on the top*/
+    float: top;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.flex-buttons{
-    padding: 8px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    max-width: fit-content;
-    background: #34444C;
-    margin-top: 0.75rem;
-	margin-bottom: 0.75rem;
-    border-radius: 50px;
-
-   
-	font-size: 24px;
-	font-weight: lighter;
-	color: white;
-
-   
-}
-.flex-buttons2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 8px;
-    max-width: fit-content;
-    background: #34444C;
-    margin-top: 0.75rem;
-	margin-bottom: 0.75rem;
-    
-    align-items: center;
-    border-radius: 50px;
-
-   
-	font-size: 24px;
-	font-weight: lighter;
-	color: white;
+    margin: auto;
+    width: 95%;
     
 }
-*/
 
-
-
-
-/* Hover Code*/
-a:hover {
-	color: steelblue;
+.bottom{
+    /*container for the short buttons on the bottom*/
+    float: bottom;
+    align-items: center;
+    margin: auto;
+    width: 95%;
 }
 
 .title{
+    /* styling the title*/
 	background: #34444C;
     border-radius: 3rem;
     height: 3rem;
@@ -102,52 +49,17 @@ a:hover {
     
     margin-bottom: 5rem;
 }
+
 .title h1 {
+    /* styling the title*/
 	font-size: 2.5rem;
 	text-align: center;
 	font-weight: lighter;
 	color: white;
-    
-}
-
-
-
-.container {
-    width: 100%;
-    height: 100vh;
-    margin: auto auto;
-    
-    display: flex;
-    align-items: center;
-}
-
-.container-box{
-    width: 30%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-
-    align-items: center;
-    justify-content:center;
-
-    vertical-align: middle;
-}
-
-.top{
-    float: top;
-    align-items: center;
-    margin: auto;
-    width: 80%;
-    
-}
-.bottom{
-    float: bottom;
-    align-items: center;
-    margin: auto;
-    width: 80%;
 }
 
 .topButtons{
+    /*style for the long buttons on the top*/
     text-align: center;
     align-items: center;
     margin-bottom: 1rem;
@@ -163,6 +75,7 @@ a:hover {
 }
 
 .buttonRows{
+    /*to make rows for the short buttons on the bottom*/
     display: flex;
     
     justify-content: space-between;
@@ -173,6 +86,7 @@ a:hover {
 }
 
 .botButtons{
+    /*styling for the short buttons on the bottom*/
     flex-basis: 47.5%;
     text-align: center;
     margin-bottom: 0em;
@@ -187,6 +101,7 @@ a:hover {
 }
 
 .botButtons a {
+    /*styling for the links*/
 	font-size: 1.5rem;
 	text-align: center;
 	font-weight: lighter;
@@ -194,10 +109,12 @@ a:hover {
 }
 
 .botButtons a:hover{
+    /*styling for the links*/
     color: steelblue;
 }
 
 .topButtons a {
+    /*styling for the links*/
 	font-size: 1.5rem;
 	text-align: center;
 	font-weight: lighter;
@@ -205,16 +122,17 @@ a:hover {
 }
 
 .topButtons a:hover{
+    /*styling for the links*/
     color: steelblue;
 }
 
 
+/*Responsive CSS for mobile Users*/
 @media(max-width: 992px) {
 	.container-box {
 		width: 80%;
 	}
 }
-
 
 @media(max-width: 576px) {
 	.container-box {

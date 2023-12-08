@@ -48,13 +48,12 @@
 	</header>
 
 		<!--To DO:
-		
-		- make the page responsive
-			- change all references to pixels to rems or ems
+	
 		- make the page look like the mockup
 			- change colors
 			- everything else 
 		- sort out issues that are listed within the code on the html, css, and javascript
+
 		- figure out why the page remembers the fields you filled in even after submitting 
 		
 		-->
@@ -81,8 +80,8 @@
 					</tr>
 					<tr>
 						<td>Find us on Social Media!</td>
-						<td>team_shino_official</td>
-						<!-- this could be an extrasite link or even a mailto link-->
+						<td><li><a href="https://linktr.ee/BlurRogue">Our Linktree</a></li></td>
+						<!-- this could also be a mailto link-->
 					</tr>
 				</table>
 			</div> <!-- title-left-->
@@ -90,7 +89,7 @@
 			<div class="title-right"> 
 				<h3>Send us a message</h3>
 				
-				<form id="form" action="/" method="GET">
+				<form id="form" action="process.php" method="GET">
 					<div class="input-row">
 
 						<div class="input-group">
@@ -99,14 +98,14 @@
 						</div>
 
 						<div class="input-group">
-							<label for="lastname">LastName</label>
+							<label for="lastname">Last Name</label>
 							<input id="lastname" name="lastname" type="text" placeholder="Smith" required>
 						</div>
 					</div>
 					<div class="input-row">
 						<div class="input-group">
 							<label for="phone">Phone Number</label>
-							<input id="phone" name="phone" type="text" placeholder="818-323-47474">
+							<input id="phone" name="phone" type="text" placeholder="818-323-4747">
 						</div>
 
 						<div class="input-group">
@@ -128,7 +127,7 @@
 
 					
 					<label>Message</label>
-					<textarea rows="5" placeholder="Your Message"> </textarea>
+					<textarea rows="5" value="Your Message" required> </textarea>
 					<!-- why is the placeholder message not showing?-->
 
 					<button type="submit">Submit</button>
