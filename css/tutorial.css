@@ -1,183 +1,349 @@
-description {
+/* Tutorial CSS*/
+
+
+html, body {
+	/*Setting up a responsive viewport*/
+	min-height: 100%;
+}
+  
+body {
+	/*Setting up a responsive viewport*/
+	min-height: 100%;
+	margin: 0;
+}
+  
+.container{
+	/*Setting up a responsive viewport*/
+    width: 100%;
+	min-height: 100vh;
+    margin: 0px;
+}
+
+
+/*First Section*/
+.description {
 	margin: auto auto;
-	padding: 1rem 5.5rem;
-
-}
-
-.description p{
-	width:1100px
-}
-
-.tutorial {
-	padding: 3rem 5.5rem;
-	width:1000px;
-}
-
-.towers{
-	padding: 0rem 8rem;
-	width: 1050px;
-}
-
-.grunts{
-	padding: 0rem 8rem;
-	width: 1050px;
-}
-
-.bosses{
-	padding: 0rem 8rem;
-	width: 1050px;
-}
-
-.box {
-	background-color: #7f878a;
-	float: right;
-	display: block;
-	margin: -45rem;
-	margin-left: 2.5%;
-	margin-right: 2.5%;
-	margin-bottom: 2.5%;
-	width: 23%;
-	height: 25%;
-	padding: 1rem;
-	border-radius: 8px;
-}
-
-.towerbox {
-	background-color: #7f878a;
-	float: right;
-	display: block;
-	margin: -30.5rem;
-	margin-left: 2.5%;
-	margin-right: 2.5%;
-	margin-bottom: 2.5%;
-	width: 41%;
-	height: 15%;
-	padding: 1rem;
-	border-radius: 8px;
-}
-
-
-.gruntbox {
-	background-color: #7f878a;
-	float: right;
-	display: block;
-	margin: -20rem;
-	margin-left: 2.5%;
-	margin-right: 2.5%;
-	margin-bottom: 2.5%;
-	width: 41%;
-	height: 15%;
-	padding: 1rem;
-	border-radius: 8px;
-}
-
-.bossbox {
-	background-color: #7f878a;
-	float: right;
-	display: block;
-	margin: -9.7rem;
-	margin-left: 2.5%;
-	margin-right: 2.5%;
-	margin-bottom: 2.5%;
-	width: 22%;
-	height: 15%;
-	padding: 1rem;
-	border-radius: 8px;
-}
-
-.big-robot{
-	position: absolute;
-	top:-205px;
-	right:500px;
-}
-
-.ant {
-	position: absolute;
-	top:556px;
-	right:610px;
-}
-
-
-.water-bug{
-	position:absolute;
-	top: 20px;
-	left: 128px;
 	
+    padding-left: 2rem;
+    padding-right: 2rem;
+	padding-bottom: 2rem;
 }
 
-.final-boss{
-	position:absolute;
-	top: 2px;
-	left: 140px;
+.description h1{
+	font-size: 2rem;
+	color:#34444C;
+
+    padding-bottom: 1.5rem;
 }
 
-.cockroach{
-	position: absolute;
-	top: 20px;
-	left: 90px;
+.description .box {
+    float: right;
+	display: block;
+	width: 10.5rem;
+	height: 8.4rem;
+	border-radius: 0.5rem;
+	background: #34444C;
+    
+	margin-top:2rem;
+	margin-left: 1rem;
+	margin-bottom: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.camo{
-	position: absolute;
-	top:25px;
-	left: 90px;
+.description .box img{
+    width:10rem; 
+    height:8rem;
+    border-radius: 0.5rem;
+
 }
 
-.beetle{
-	position: absolute;
-	top: -12px;
-	left: 90px;
+
+/*Second Section*/
+.tutorial {
+	margin: auto auto;
+	
+    padding-left: 2rem;
+    padding-right: 2rem;
+	padding-bottom: 2rem;
 }
 
-.drill{
-	position: absolute;
-	top:3px;
-	left: 110px;
+.tutorial h1{
+	font-size: 2rem;
+	color: #34444C;
+
+    padding-bottom: 1.5rem;
 }
 
-.explode {
-	position: absolute;
-	top:2px;
-	left: 110px;
+
+/* Third Section - Towers */
+.towers {
+    margin: auto auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
 }
 
-.basic {
-	position: absolute;
-	top: -160px;
-	right: 620px;
+.towers h2 {
+    font-size: 1.75rem;
+    color: #34444C;
+    padding-bottom: 1.5rem;
 }
 
-.missile {
-	position: absolute;
-	top:10px;
-	left: 100px;
+.towers .box {
+    float: right;
+    width: 100%; 
+    max-width: 35rem;
+    height: 6.4rem;
+    border-radius: 1rem;
+    background: #34444C;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.cryo{
-	position: absolute;
-	top:5px;
-	left:130px;
+.towers .mobilebox {
+    display: none;
+    float: right;
+    width: 100%; 
+    max-width: 35rem;
+    height: 6.4rem;
+    border-radius: 1rem;
+    background: #34444C;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    flex-direction: row;
 }
 
-.mine{
-	position: absolute;
-	top:5px;
-	left: 125px;
+.towers .tower {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.command{
-	position: absolute;
-	top: -5px;
-	left: 110px;
+.towers .tower img {
+    margin: auto;
+    height: 70%;
+    width: 70%;
+    border-radius: 0.5rem;
+    background: lightblue;
 }
 
-.fire {
-	position: absolute;
-	top: 2px;
-	left: 110px;
+/* Fourth Section - Grunts */
+.grunts {
+    margin: auto auto;
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
 }
 
-.queen-ant {
-	position: absolute;
-	top: 170px;
-	left: 310px;
+.grunts h2 {
+    font-size: 1.75rem;
+    color: #34444C;
+    padding-bottom: 1.5rem;
+}
+
+.grunts h3 {
+    font-size: 1.4rem;
+    color: black;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.grunts #holderbox {
+    clear: right;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.grunts #mobileholderbox {
+    display: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.grunts .mobilebox {
+    float: right;
+    width: 100%; 
+    max-width: 35rem;
+    height: 6.4rem;
+    border-radius: 1rem;
+    background: #34444C;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+
+.grunts .box {
+    float: right;
+    width: 100%; 
+    max-width: 35rem;
+    height: 6.4rem;
+    border-radius: 1rem;
+    background: #34444C;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grunts .bug,
+.grunts .robot {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grunts .bug img,
+.grunts .robot img {
+    margin: auto;
+    height: 70%;
+    width: 70%;
+    border-radius: 0.5rem;
+    background: lightblue;
+}
+
+/* Fifth Section - Bosses */
+.bosses {
+    margin: auto auto;
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.bosses h2 {
+    font-size: 1.75rem;
+    color: #34444C;
+    padding-bottom: 1.5rem;
+}
+
+.bosses .box {
+    float: right;
+    width: 100%;
+    max-width: 20rem;
+    height: 6.4rem;
+    border-radius: 1rem;
+    background: #34444C;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bosses .mobilebox {
+    float: right;
+    width: 100%;
+    max-width: 20rem;
+    height: 6.4rem;
+    border-radius: 1rem;
+    background: #34444C;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+
+.bosses .boss {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bosses .boss img {
+    margin: auto;
+    height: 70%;
+    width: 70%;
+    border-radius: 0.5rem;
+    background: lightblue;
+}
+
+/*Responsive Design */
+@media (max-width: 992px) {
+    .towers .box,
+    .grunts .box,
+    .bosses .box {
+        float: none;
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+	}
+
+@media (max-width: 576px) {
+    .towers .box,
+    .grunts .box,
+    .bosses .box {
+        display: none;
+        clear: both;
+        float: none;
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .grunts #mobileholderbox{
+        display: block;
+        visibility: visible;
+    }
+    
+    .towers .mobilebox,
+    .grunts .mobilebox,
+    .bosses .mobilebox  {
+        display: block;
+        visibility: visible;
+        clear: both;
+        float: none;
+        width: 100%;
+        
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    .grunts .mobilebox {
+        justify-content: space-between;
+        height: 20rem;    
+        margin-top: 2rem;
+    }
+    .towers .mobilebox{
+        height: 12rem;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+    
+	}
