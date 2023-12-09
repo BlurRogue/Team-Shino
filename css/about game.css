@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
+/*
 * {
 	font-family: Lato;
 	box-sizing: border-box;
@@ -86,3 +87,187 @@ hr {
 		width: 100%;
 }
 	}
+
+	*/
+
+
+
+/* About Game CSS*/
+
+html, body {
+	/*Setting up a responsive viewport*/
+	min-height: 100vh;
+	
+}
+
+body {
+	/*Setting up a responsive viewport*/
+	min-height: 100%;
+	margin: 0;
+}
+
+header {
+	margin-bottom: 0rem;
+}
+
+.container {
+    /*A container that centers the container box */
+	width: 100%;
+	min-height: 100vh;
+    margin: 0px;
+
+    display: flex;
+    align-items: column;
+
+	background:#598094;
+}
+
+.container-box{
+    /*A container that makes a flex box for the title and buttons*/
+	flex: 1; 
+	min-height: 100vh;
+	width: 70%;
+    max-width: 70%;
+	height:100%;
+	max-height: 100%;
+    margin: auto auto;
+	
+
+    display: flex;
+    flex-direction: column;
+	justify-content: flex-start;
+	gap:0rem;
+	background: white;
+}
+
+/*First Section*/
+.general {
+	margin: auto auto;
+	background: red;
+	
+    padding: 2rem;
+}
+
+.general h1{
+	font-size: 2rem;
+	color:#34444C;
+
+    padding-bottom: 1.5rem;
+}
+
+.general .box {
+    float: right;
+	display: block;
+	width: 10.5rem;
+	height: 8.4rem;
+	border-radius: 0.5rem;
+	background: #34444C;
+    
+	margin-top:2rem;
+	margin-left: 1rem;
+	margin-bottom: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.general .box img{
+    width:10rem; 
+    height:8rem;
+    border-radius: 0.5rem;
+
+}
+
+/*Second Section*/
+.story {
+	margin: auto auto;
+	background: orange;
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+	padding-bottom: 2rem;
+}
+
+.story h1{
+	font-size: 2rem;
+	color: #34444C;
+
+    padding-bottom: 1.5rem;
+}
+
+
+.story_continued {
+    margin: auto auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.story_continued h2 {
+    font-size: 1.75rem;
+    color: #34444C;
+    padding-bottom: 1.5rem;
+}
+
+.story_continued .box {
+    float: left;
+    width: 100%; 
+    max-width: 35rem;
+    height: 6.4rem;
+    border-radius: 1rem;
+    background: #34444C;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.story_continued .mobilebox {
+    display: none;
+    float: right;
+    width: 100%; 
+    max-width: 35rem;
+    height: 6.4rem;
+    border-radius: 1rem;
+    background: #34444C;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    flex-direction: row;
+}
+
+.story_continued .tower {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.story_continued .tower img {
+    margin: auto;
+    height: 70%;
+    width: 70%;
+    border-radius: 0.5rem;
+    background: lightblue;
+}
+
+
+
+
+/*Responsive CSS for mobile Users*/
+@media(max-width: 992px) {
+	.container-box {
+		width: 80%;
+	}
+}
+
+@media(max-width: 576px) {
+	.container-box {
+		width: 80%;
+	}
+}
