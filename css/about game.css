@@ -142,10 +142,10 @@ header {
 
 /*First Section*/
 .general {
-	margin: auto auto;
-	background: red;
+	margin: 0 auto;
 	
     padding: 2rem;
+	padding-bottom: 1rem;
 }
 
 .general h1{
@@ -158,8 +158,8 @@ header {
 .general .box {
     float: right;
 	display: block;
-	width: 10.5rem;
-	height: 8.4rem;
+	width: 12rem;
+	height: 12rem;
 	border-radius: 0.5rem;
 	background: #34444C;
     
@@ -173,20 +173,43 @@ header {
 }
 
 .general .box img{
-    width:10rem; 
-    height:8rem;
+    width:11rem;
+    height:11rem;
+    border-radius: 0.5rem;
+
+}
+
+.general .mobilebox {
+	display: block;
+	width: 10rem;
+	height: 10rem;
+	border-radius: 0.5rem;
+	background: #34444C;
+    
+	margin: auto;
+	margin-top: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+	display: none;
+}
+
+.general .mobilebox img{
+    width:95%;
+    height:95%;
     border-radius: 0.5rem;
 
 }
 
 /*Second Section*/
 .story {
-	margin: auto auto;
-	background: orange;
+	margin: 0 auto;
 
     padding-left: 2rem;
     padding-right: 2rem;
-	padding-bottom: 2rem;
+	padding-bottom: 0.5rem;
 }
 
 .story h1{
@@ -198,10 +221,10 @@ header {
 
 
 .story_continued {
-    margin: auto auto;
+    margin: 0 auto;
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 .story_continued h2 {
@@ -213,13 +236,15 @@ header {
 .story_continued .box {
     float: left;
     width: 100%; 
-    max-width: 35rem;
+    max-width: 6.4rem;
     height: 6.4rem;
+
     border-radius: 1rem;
     background: #34444C;
-    margin-top: 3rem;
-    margin-left: 1rem;
-    margin-bottom: 1rem;
+
+    margin: 0.5rem;
+	margin-top: 0rem;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -262,12 +287,31 @@ header {
 /*Responsive CSS for mobile Users*/
 @media(max-width: 992px) {
 	.container-box {
-		width: 80%;
 	}
 }
 
 @media(max-width: 576px) {
 	.container-box {
-		width: 80%;
+		min-width: 100%;
 	}
+
+	.general {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.general .box {
+		display: none;
+		visibility:hidden;
+	}
+	
+	.general .mobilebox {
+		display: block;
+		visibility: visible;
+		display: flex;
+
+		
+	}
+
 }
