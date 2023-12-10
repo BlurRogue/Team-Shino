@@ -1,0 +1,349 @@
+/* Tutorial CSS*/
+
+
+html, body {
+	/*Setting up a responsive viewport*/
+	min-height: 100%;
+}
+  
+body {
+	/*Setting up a responsive viewport*/
+	min-height: 100%;
+	margin: 0;
+}
+  
+.container{
+	/*Setting up a responsive viewport*/
+    width: 100%;
+	min-height: 100vh;
+    margin: 0px;
+}
+
+
+/*First Section*/
+.description {
+	margin: auto auto;
+	
+    padding-left: 2rem;
+    padding-right: 2rem;
+	padding-bottom: 2rem;
+}
+
+.description h1{
+	font-size: 2rem;
+	color:#34444C;
+
+    padding-bottom: 1.5rem;
+}
+
+.description .box {
+    float: right;
+	display: block;
+	width: 10.5rem;
+	height: 8.4rem;
+	border-radius: 0.5rem;
+	background: #34444C;
+    
+	margin-top:2rem;
+	margin-left: 1rem;
+	margin-bottom: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description .box img{
+    width:10rem; 
+    height:8rem;
+    border-radius: 0.5rem;
+
+}
+
+
+/*Second Section*/
+.tutorial {
+	margin: auto auto;
+	
+    padding-left: 2rem;
+    padding-right: 2rem;
+	padding-bottom: 2rem;
+}
+
+.tutorial h1{
+	font-size: 2rem;
+	color: #34444C;
+
+    padding-bottom: 1.5rem;
+}
+
+
+/* Third Section - Towers */
+.towers {
+    margin: auto auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.towers h2 {
+    font-size: 1.75rem;
+    color: #34444C;
+    padding-bottom: 1.5rem;
+}
+
+.towers .box {
+    float: right;
+    width: 100%; 
+    max-width: 35rem;
+    height: 6.4rem;
+    border-radius: 1rem;
+    background: #34444C;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.towers .mobilebox {
+    display: none;
+    float: right;
+    width: 100%; 
+    max-width: 35rem;
+    height: 6.4rem;
+    border-radius: 1rem;
+    background: #34444C;
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    flex-direction: row;
+}
+
+.towers .tower {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.towers .tower img {
+    margin: auto;
+    height: 70%;
+    width: 70%;
+    border-radius: 0.5rem;
+    background: lightblue;
+}
+
+/* Fourth Section - Grunts */
+.grunts {
+    margin: auto auto;
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.grunts h2 {
+    font-size: 1.75rem;
+    color: #34444C;
+    padding-bottom: 1.5rem;
+}
+
+.grunts h3 {
+    font-size: 1.4rem;
+    color: black;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.grunts #holderbox {
+    clear: right;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.grunts #mobileholderbox {
+    display: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.grunts .mobilebox {
+    float: right;
+    width: 100%; 
+    max-width: 35rem;
+    height: 6.4rem;
+    border-radius: 1rem;
+    background: #34444C;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+
+.grunts .box {
+    float: right;
+    width: 100%; 
+    max-width: 35rem;
+    height: 6.4rem;
+    border-radius: 1rem;
+    background: #34444C;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grunts .bug,
+.grunts .robot {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grunts .bug img,
+.grunts .robot img {
+    margin: auto;
+    height: 70%;
+    width: 70%;
+    border-radius: 0.5rem;
+    background: lightblue;
+}
+
+/* Fifth Section - Bosses */
+.bosses {
+    margin: auto auto;
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.bosses h2 {
+    font-size: 1.75rem;
+    color: #34444C;
+    padding-bottom: 1.5rem;
+}
+
+.bosses .box {
+    float: right;
+    width: 100%;
+    max-width: 20rem;
+    height: 6.4rem;
+    border-radius: 1rem;
+    background: #34444C;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bosses .mobilebox {
+    float: right;
+    width: 100%;
+    max-width: 20rem;
+    height: 6.4rem;
+    border-radius: 1rem;
+    background: #34444C;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+
+.bosses .boss {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bosses .boss img {
+    margin: auto;
+    height: 70%;
+    width: 70%;
+    border-radius: 0.5rem;
+    background: lightblue;
+}
+
+/*Responsive Design */
+@media (max-width: 992px) {
+    .towers .box,
+    .grunts .box,
+    .bosses .box {
+        float: none;
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+	}
+
+@media (max-width: 576px) {
+    .towers .box,
+    .grunts .box,
+    .bosses .box {
+        display: none;
+        clear: both;
+        float: none;
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .grunts #mobileholderbox{
+        display: block;
+        visibility: visible;
+    }
+    
+    .towers .mobilebox,
+    .grunts .mobilebox,
+    .bosses .mobilebox  {
+        display: block;
+        visibility: visible;
+        clear: both;
+        float: none;
+        width: 100%;
+        
+        max-width: none;
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    .grunts .mobilebox {
+        justify-content: space-between;
+        height: 20rem;    
+        margin-top: 2rem;
+    }
+    .towers .mobilebox{
+        height: 12rem;
+        justify-content: space-between;
+        margin-top: 2rem;
+    }
+
+    
+	}
