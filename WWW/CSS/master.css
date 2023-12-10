@@ -5,7 +5,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "Inter Medium", "Inter Light"
+	font-family: 'Inter', sans-serif;
 }
 
 body {
@@ -107,6 +107,7 @@ header {
 
 /* Downdown Menu */
 .dropdown-menu {
+	z-index: 98;
 	position: absolute;
 	right: 2rem;
 	top: 60px;
@@ -119,7 +120,7 @@ header {
 	transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.dropdown-menu open {
+.dropdown-menu.open {
 	height: 250px;
 }
 
@@ -163,6 +164,3 @@ header {
 		width: unset;
 	}
 }
-
-
-
