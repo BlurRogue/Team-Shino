@@ -6,11 +6,6 @@
 	font-family: 'Inter', sans-serif;;
 }
 
-a {
-	cursor: pointer;
-	text-decoration: none;
-}
-
 .mainbody {
 	position: relative;
 	display: flex;
@@ -36,31 +31,30 @@ a {
 	margin: 1rem 0 2rem;
 	width: 100%;
 	padding: 0.5rem;
-	background-color: #FDFEFF;
+	background-color: #34444C;
 	border-radius: 1rem;
 }
 
+.article a:hover {
+	transform: translate(0, -10px);
+}
 
 .article-thumbnail img{
 	width: 20rem;
 	height: 12.5rem;
 	margin-right: 1rem;
 	background-size: cover;
-	transition: .25s;
-}
-
-.article-text {
-	color:#217AE4;
+	border-radius: 8px;
 }
 
 .article-text h2 {
-	font-weight: 700;
+	font-weight: 500;
 	font-size: 1.3rem;
 	margin-bottom: 1rem;
 }
 
 .article-text p {
-	font-weight: 700;
+	font-weight: 500;
 	font-size: 0.76rem;
 }
 
