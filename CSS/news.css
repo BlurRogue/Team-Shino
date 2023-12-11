@@ -6,6 +6,10 @@
 	font-family: 'Inter', sans-serif;;
 }
 
+a:hover {
+	transform: translate(0, -10px);
+}
+
 .mainbody {
 	position: relative;
 	display: flex;
@@ -33,10 +37,6 @@
 	padding: 0.5rem;
 	background-color: #34444C;
 	border-radius: 1rem;
-}
-
-.article a:hover {
-	transform: translate(0, -10px);
 }
 
 .article-thumbnail img{
