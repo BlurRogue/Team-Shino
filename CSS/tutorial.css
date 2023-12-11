@@ -233,6 +233,7 @@ body {
 }
 
 .bosses .box {
+    clear: both;
     float: right;
     width: 100%;
     max-width: 20rem;
