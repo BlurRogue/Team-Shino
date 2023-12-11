@@ -2,8 +2,8 @@
 /* CSS Document */
 
 * {
-	font-family: Lato;
 	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
 }
 
 hr {
@@ -30,7 +30,7 @@ hr {
 	margin-bottom: 2.5%;
 	width: 30%;
 	padding: 1.8rem;
-	border-radius: 8px;
+	border-radius: 1rem;
 }
 
 .info-head {
@@ -50,7 +50,7 @@ hr {
 .image-wrapper img {
 	width: 100%;
 	height: 100%;
-	border-radius: 5px;
+	border-radius: 8px;
 }
 
 .info-panel h2 {

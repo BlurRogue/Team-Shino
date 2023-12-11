@@ -44,6 +44,15 @@ p {
 	font-size: 1rem;
 }
 
+ul p{
+	margin-left: 2rem;
+}
+
+ul h3 {
+	font-size: 1.25rem;
+	font-weight: 500;
+}
+
 .vl {
 	margin-right: -0.5rem;
 	padding: 15px;
@@ -51,5 +60,12 @@ p {
 	border: 0px;
 	border-left: 3px;
 	border-style: solid;
-	height: 700px;
+	height: 835px;
+}
+
+@media(max-width: 576px) {
+	.vl {
+		margin-bottom: 15px;
+		height: 1150px;
+	}
 }

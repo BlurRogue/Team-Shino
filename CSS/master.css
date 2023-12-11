@@ -5,7 +5,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "Inter Medium", "Inter Light"
 }
 
 body {
@@ -39,6 +38,7 @@ header {
 	padding: 0 35px;
 	background: #34444C;
 	margin-bottom: 1.6rem;
+	font-family: 'Inter', sans-serif;
 }
 
 .title {
@@ -81,50 +81,26 @@ header {
 	display: none;
 }
 
-.loginbtn {
-	background-color: steelblue;
-	color: #FFFFFF;
-	padding: 0.5rem 1rem;
-	border: none;
-	outline: none;
-	border-radius: 20px;
-	font-size: 0.8rem;
-	font-weight: bold;
-	cursor: pointer;
-	transition: scale 0.2 ease;
-}
-
-.loginbtn:hover {
-	scale: 1.05;
-	color: #FFFFFF;
-}
-
-.loginbtn:active {
-	scale: 0.95;
-}
-
-/* Content */
-
 /* Downdown Menu */
 .dropdown-menu {
+	z-index: 98;
 	position: absolute;
 	right: 2rem;
 	top: 60px;
 	height: 0px;
 	width: 300px;
-	background: rgba(255, 255, 255, 0.1);
-	backdrop-filter: blur(15px);
+	background: #598094;
 	border-radius: 10px;
 	overflow: hidden;
 	transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.dropdown-menu open {
-	height: 250px;
+.dropdown-menu.open {
+	height: 270px;
 }
 
 .dropdown-menu li {
-	padding: 0.7rem;
+	padding: 0.8rem;
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
@@ -163,6 +139,3 @@ header {
 		width: unset;
 	}
 }
-
-
-

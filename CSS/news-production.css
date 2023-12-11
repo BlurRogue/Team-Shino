@@ -54,8 +54,8 @@ ul h3 {
 }
 
 .levels img{
-	height: 30rem;
-	width: 36rem;
+	height: 18rem;
+	width: 26rem;
 }
 
 .line {
@@ -66,21 +66,85 @@ ul h3 {
 	border: 0px;
 	border-left: 3px;
 	border-style: solid;
-	height: 845px;
+	height: 1760px;
+}
+
+@media(max-width: 1038px) {
+	.levels img {
+		height: 14rem;
+		width: 25rem;
+	}
+	.line {
+		height: 1580px;
+	}
 }
 
 @media(max-width: 992px) {
 	.levels img {
 		height: 12rem;
-		width: 24rem;
+		width: 22rem;
 	}
 	.line {
-		height: 500px;
+		height: 1490px;
 	}
 }
 
-@media(max-width: 576px) {
+@media(max-width: 917px) {
+	.levels img {
+		height: 12rem;
+		width: 22rem;
+	}
 	.line {
-		height: 1150px;
+		height: 1595px;
+	}
+}
+
+@media(max-width: 800px) {
+	.levels img {
+		height: 14rem;
+		width: 26rem;
+	}
+	.line {
+		height: 2580px;
+	}
+}
+
+@media(max-width: 755px) {
+	.levels img {
+		height: 12rem;
+		width: 22rem;
+	}
+	.line {
+		height: 2415px;
+	}
+}
+
+@media(max-width: 651px) {
+	.levels img {
+		height: 12rem;
+		width: 22rem;
+	}
+	.line {
+		height: 2430px;
+	}
+}
+
+@media(max-width: 568px) {
+	.levels img {
+		height: 12rem;
+		width: 18rem;
+	}
+	.line {
+		height: 2675px;
+	}
+}
+
+@media(max-width: 453px) {
+	.levels img {
+		height: 8rem;
+		width: 14rem;
+	}
+	.line {
+		height: 2725px;
 	}
 }
